@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive website template">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Design">
+    <meta name="author" content="Your Name">
+
+    <title>Big Website Template</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, #00adb5, #007f83);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        .btn {
+            background: white;
+            color: #007f83;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #222;
+            color: white;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .services, .portfolio, .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .testimonial {
+            background: #00adb5;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item h4 {
+            cursor: pointer;
+            background: #007f83;
+            color: white;
+            padding: 10px;
+        }
+
+        .faq-content {
+            display: none;
+            padding: 10px;
+            background: white;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MyBrand</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Our Website</h2>
+    <p>We build modern, fast and scalable web applications to grow your business.</p>
+    <button class="btn">Get Started</button>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel risus eget nunc fermentum volutpat.</p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive designs.</p>
+        </div>
+        <div class="card">
+            <h3>Development</h3>
+            <p>Fast and scalable applications.</p>
+        </div>
+        <div class="card">
+            <h3>SEO</h3>
+            <p>Improve your search ranking.</p>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="portfolio">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Testimonials</h2>
+    <div class="testimonial">
+        <p>"This company transformed our online presence!"</p>
+        <strong>- Happy Client</strong>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2 class="section-title">Pricing</h2>
+    <div class="pricing">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>$99</p>
+        </div>
+        <div class="card">
+            <h3>Pro</h3>
+            <p>$199</p>
+        </div>
+        <div class="card">
+            <h3>Enterprise</h3>
+            <p>$399</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-item">
+        <h4 onclick="toggleFAQ(this)">What services do you offer?</h4>
+        <div class="faq-content">We offer web design, development, and SEO services.</div>
+    </div>
+    <div class="faq-item">
+        <h4 onclick="toggleFAQ(this)">How can I contact you?</h4>
+        <div class="faq-content">Use the contact form below.</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="email" placeholder="Your Email" required><br><br>
+        <textarea placeholder="Your Message" required></textarea><br><br>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 MyBrand. All rights reserved.</p>
+</footer>
+
+<script>
+function toggleFAQ(element) {
+    let content = element.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
